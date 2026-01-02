@@ -1,0 +1,3 @@
+In this experiment, I fine-tune a **tiny decoder-only language model** with **Group Relative Policy Optimization (GRPO)** on a simple, fully synthetic reasoning task based on 5-card poker hands. This notebook was developed in Google Colab for an assignment in ECE 57000 at Purdue University and is intended for academic purposes.
+
+Due to [a persistent CUDA device-side assert crash with GPU runtimes](https://github.com/googlecolab/colabtools/issues/5749) (attempted with both A100 and T4 GPUs), I developed this program on a **CPU** runtime. The "High-RAM" runtime setting is also recommended: my test runs have never entirely run out of memory, but the program has come close to maxing out the default RAM size on some runs.
